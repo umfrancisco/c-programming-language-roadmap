@@ -637,7 +637,6 @@ The following resources are recommended for studying C.
 | Modern C | Modern C programming by Jens Gustedt | [Website](https://gustedt.gitlabpages.inria.fr/modern-c/) |
 | C Programming: A Modern Approach | Comprehensive textbook by K. N. King | Book |
 | The C Programming Language | Classic textbook by Kernighan and Ritchie | Book |
-| CS50x | Harvard computer science course | [Website](https://cs50.harvard.edu/x/) |
 | Exercism | Practical C exercises | [C Track](https://exercism.org/tracks/c) |
 | cppreference | C language and standard library reference | [Website](https://en.cppreference.com/w/c) |
 

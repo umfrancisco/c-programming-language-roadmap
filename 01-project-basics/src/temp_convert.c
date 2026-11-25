@@ -6,12 +6,14 @@ float convert_fahr_celsius(float fahr) {
 }
 
 void print_range_temps(int lower, int upper) {
+  char *title = "Celsius and Fahrenheit";
+
   float fahr, celsius;
   int step = 20;
 
   fahr = lower;
 
-  printf("Celsius and Fahrenheit\n");
+  printf("%s\n", title);
   printf("From %d to %d\n", lower, upper);
   while (fahr <= upper) {
     celsius = convert_fahr_celsius(fahr);
