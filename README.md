@@ -112,7 +112,7 @@ Learn how C represents and manipulates data.
 - [ ] `long`
 - [ ] `long long`
 - [ ] `unsigned`
-- [ ] `_Bool`
+- [ ] `bool`
 - [ ] `void`
 
 ### Variables and Constants
