@@ -104,9 +104,9 @@ Learn how C represents and manipulates data.
 
 ### Data Types
 
-- [ ] `char`
-- [ ] `int`
-- [ ] `float`
+- [x] `char`
+- [x] `int`
+- [x] `float`
 - [ ] `double`
 - [ ] `short`
 - [ ] `long`
@@ -117,21 +117,21 @@ Learn how C represents and manipulates data.
 
 ### Variables and Constants
 
-- [ ] Variable declaration and initialization.
+- [x] Variable declaration and initialization.
 - [ ] Type conversion.
 - [ ] Implicit and explicit casting.
 - [ ] Constants with `const`.
-- [ ] Preprocessor macros with `#define`.
+- [x] Preprocessor macros with `#define`.
 - [ ] Integer limits.
 
 ### Operators
 
-- [ ] Arithmetic operators.
-- [ ] Assignment operators.
+- [x] Arithmetic operators.
+- [x] Assignment operators.
 - [ ] Comparison operators.
 - [ ] Logical operators.
 - [ ] Bitwise operators.
-- [ ] Increment and decrement.
+- [x] Increment and decrement.
 - [ ] Ternary operator.
 - [ ] Operator precedence.
 
