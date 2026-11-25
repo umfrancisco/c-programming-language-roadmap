@@ -44,10 +44,36 @@ void passing_pointers_args() {
   printf("float after: %.2f\n", b);
 }
 
+void null_pointer() {
+  int *p = NULL;
+  printf("%p\n", (void *)p);
+}
+
+void valid_pointer_declaration() {
+  int a, *b; // a int, b pointer to int
+  int *c, d; // c pointer to int, d int
+  int* e, f; // e pointer to int, f int
+
+  a = 10;
+  b = &a;
+
+  d = 20;
+  c = &d;
+
+  f = 30;
+  e = &f;
+
+  printf("val=%d, addr=%p\n", a, (void *)b);
+  printf("val=%d, addr=%p\n", d, (void *)c);
+  printf("val=%d, addr=%p\n", f, (void *)e);
+}
+
 int main() {
   about_mem_size();
   print_mem_addr();
   pointer_types();
   passing_pointers_args();
+  null_pointer();
+  valid_pointer_declaration();
   return 0;
 }
