@@ -629,8 +629,6 @@ gcc -Wall -Wextra -Wpedantic -std=c17 -g main.c -o main
 
 # 12. Learning Resources
 
-The following resources are recommended for studying C.
-
 | Resource | Description | Link |
 |---|---|---|
 | Beej's Guide to C | Accessible C programming guide | [Website](https://beej.us/guide/bgc/) |
