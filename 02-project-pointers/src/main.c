@@ -22,9 +22,32 @@ void pointer_types() {
   printf("pointer = %p, dereference value = %d\n", (void *)p, *p);
 }
 
+void increment_existing_int(int *p, int amount) {
+  *p += amount;
+}
+
+void increment_existing_float(float *p, int amount) {
+  *p += (float) amount;
+}
+
+void passing_pointers_args() {
+  int a = 100;
+  int *z = &a;
+  printf("int before: %d\n", a);
+  increment_existing_int(z, 1);
+  printf("int after: %d\n", a);
+
+  float b = 200;
+  float *y = &b;
+  printf("float before: %.2f\n", b);
+  increment_existing_float(y, 23);
+  printf("float after: %.2f\n", b);
+}
+
 int main() {
   about_mem_size();
   print_mem_addr();
   pointer_types();
+  passing_pointers_args();
   return 0;
 }
