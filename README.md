@@ -59,8 +59,8 @@ Start by understanding the development environment and how C programs are compil
   - [ ] Linking.
 - [ ] GCC and Clang compilers.
 - [ ] Header files and source files.
-- [ ] The `main()` function.
-- [ ] Standard input and output.
+- [x] The `main()` function.
+- [x] Standard input and output.
 - [ ] Compilation flags and warnings.
 - [ ] Basic debugging.
 
@@ -118,8 +118,8 @@ Learn how C represents and manipulates data.
 ### Variables and Constants
 
 - [x] Variable declaration and initialization.
-- [ ] Type conversion.
-- [ ] Implicit and explicit casting.
+- [x] Type conversion.
+- [x] Implicit and explicit casting.
 - [ ] Constants with `const`.
 - [x] Preprocessor macros with `#define`.
 - [ ] Integer limits.
@@ -128,8 +128,8 @@ Learn how C represents and manipulates data.
 
 - [x] Arithmetic operators.
 - [x] Assignment operators.
-- [ ] Comparison operators.
-- [ ] Logical operators.
+- [x] Comparison operators.
+- [x] Logical operators.
 - [ ] Bitwise operators.
 - [x] Increment and decrement.
 - [ ] Ternary operator.
@@ -139,9 +139,9 @@ Learn how C represents and manipulates data.
 
 - [ ] Signed vs. unsigned integers.
 - [ ] Integer overflow.
-- [ ] Floating-point precision.
+- [x] Floating-point precision.
 - [ ] Integer promotion.
-- [ ] Type sizes and representation.
+- [x] Type sizes and representation.
 
 ### Practice Projects
 
@@ -171,15 +171,15 @@ Learn how to control program execution and organize code into reusable component
 
 ### Functions
 
-- [ ] Function declarations and definitions.
-- [ ] Function parameters.
-- [ ] Return types.
+- [x] Function declarations and definitions.
+- [x] Function parameters.
+- [x] Return types.
 - [ ] `void` functions.
 - [ ] Function prototypes.
 - [ ] Scope and lifetime.
-- [ ] Local and global variables.
+- [x] Local and global variables.
 - [ ] Recursion.
-- [ ] Passing arguments by value.
+- [x] Passing arguments by value.
 
 ### Additional Concepts
 
