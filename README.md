@@ -634,10 +634,6 @@ The following resources are recommended for studying C.
 | Resource | Description | Link |
 |---|---|---|
 | Beej's Guide to C | Accessible C programming guide | [Website](https://beej.us/guide/bgc/) |
-| Modern C | Modern C programming by Jens Gustedt | [Website](https://gustedt.gitlabpages.inria.fr/modern-c/) |
-| C Programming: A Modern Approach | Comprehensive textbook by K. N. King | Book |
-| The C Programming Language | Classic textbook by Kernighan and Ritchie | Book |
-| Exercism | Practical C exercises | [C Track](https://exercism.org/tracks/c) |
 | cppreference | C language and standard library reference | [Website](https://en.cppreference.com/w/c) |
 
 ---
