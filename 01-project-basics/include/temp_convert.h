@@ -3,5 +3,6 @@
 
 float convert_fahr_celsius(float fahr);
 void print_temps(int step);
+void random_convert();
 
 #endif

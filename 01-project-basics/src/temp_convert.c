@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define LOWER 0
 #define UPPER 300
@@ -22,5 +23,11 @@ void print_temps(int step) {
     printf("%3.0f C %6.1f F\n", fahr, celsius);
     fahr += step;
   }
-  printf("---------------\n");
+}
+
+void random_convert() {
+  int r = rand() % 1000;
+  float result = convert_fahr_celsius((float) r);
+  printf("Celsius = %d C\n", r);
+  printf("Fahrenheit = %.2f F\n", result);
 }
