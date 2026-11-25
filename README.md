@@ -89,7 +89,7 @@ Understand what each flag does instead of simply memorizing the command.
 ### Practice Projects
 
 - [x] Hello World.
-- [ ] Simple calculator.
+- [x] Simple calculator.
 - [x] Temperature converter.
 - [ ] Number guessing game.
 - [ ] Basic command-line menu.
