@@ -5,6 +5,7 @@ float sum(float a, float b);
 float subtract(float a, float b);
 float multiply(float a, float b);
 float divide(float a, float b);
+float doOperation(char operator, float a, float b);
 void calculate();
 
 #endif
