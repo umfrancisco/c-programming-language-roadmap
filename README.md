@@ -48,11 +48,11 @@ Start by understanding the development environment and how C programs are compil
 
 ### Topics
 
-- [ ] What is C?
-- [ ] History and evolution of C.
-- [ ] Why C is still relevant.
-- [ ] Compiled vs. interpreted languages.
-- [ ] C compilation process:
+- [x] What is C?
+- [x] History and evolution of C.
+- [x] Why C is still relevant.
+- [x] Compiled vs. interpreted languages.
+- [x] C compilation process:
   - [ ] Preprocessing.
   - [ ] Compilation.
   - [ ] Assembly.
@@ -88,9 +88,9 @@ Understand what each flag does instead of simply memorizing the command.
 
 ### Practice Projects
 
-- [ ] Hello World.
+- [x] Hello World.
 - [ ] Simple calculator.
-- [ ] Temperature converter.
+- [x] Temperature converter.
 - [ ] Number guessing game.
 - [ ] Basic command-line menu.
 
