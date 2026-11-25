@@ -1,19 +1,7 @@
-#include <stdio.h>
 #include "../include/temp_convert.h"
 
 int main() {
-  float fahr, celsius;
-  int lower, upper, step;
-  
-  lower = 0;
-  upper = 300;
-  step = 10;
-
-  fahr = lower;
-  while (fahr <= upper) {
-    celsius = convert_fahr_celsius(fahr);
-    printf("%3.0f %6.1f\n", fahr, celsius);
-    fahr += step;
-  }
+  print_range_temps(0, 300);
+  print_range_temps(-100, 200);
   return 0;
 }
