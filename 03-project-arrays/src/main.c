@@ -47,8 +47,13 @@ void array_initializer() {
     printf("%d ", arr[i]);
   }
   printf("\n");
+
+  // int a[3] = {22, 37, 3490};
+  // ... same as ...
+  // int a[] = {22, 37, 3490};
 }
 
+// 6.5 Multidimensional Arrays - Beej
 int main() {
   basic_arrays();
   array_initializer();
