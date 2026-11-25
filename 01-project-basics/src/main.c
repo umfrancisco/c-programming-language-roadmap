@@ -1,6 +1,6 @@
+#include <stdio.h>
 #include "../include/temp_convert.h"
 #include "../include/hello_world.h"
-#include <stdio.h>
 
 void foo(int option) {
   if (option == 1) {

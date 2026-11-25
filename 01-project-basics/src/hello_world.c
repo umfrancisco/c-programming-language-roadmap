@@ -8,8 +8,8 @@ char* greet() {
 void get_string_info(char* text) {
   printf("Text = %s\n", text);
 
-  int size = sizeof(text);
-  printf("Size of text = %d\n", size);
+  unsigned long int size = sizeof text;
+  printf("Size of text = %zu\n", size);
 
   int text_length = strlen(text);
   printf("Length of text = %d\n", text_length);

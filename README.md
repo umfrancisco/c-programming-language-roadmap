@@ -109,9 +109,9 @@ Learn how C represents and manipulates data.
 - [x] `float`
 - [ ] `double`
 - [ ] `short`
-- [ ] `long`
+- [x] `long`
 - [ ] `long long`
-- [ ] `unsigned`
+- [x] `unsigned`
 - [ ] `bool`
 - [ ] `void`
 
