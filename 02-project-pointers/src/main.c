@@ -14,8 +14,17 @@ void print_mem_addr() {
   printf("and its address is %p\n", (void *)&i);
 }
 
+void pointer_types() {
+  int i, *p; // a value and its pointer
+  i = 20;
+  p = &i;
+  printf("value of i = %d\n", i);
+  printf("pointer = %p, dereference value = %d\n", (void *)p, *p);
+}
+
 int main() {
   about_mem_size();
   print_mem_addr();
+  pointer_types();
   return 0;
 }
