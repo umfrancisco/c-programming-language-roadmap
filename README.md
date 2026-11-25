@@ -161,10 +161,10 @@ Learn how to control program execution and organize code into reusable component
 
 ### Control Flow
 
-- [ ] `if`, `else if`, `else`.
-- [ ] `switch`.
+- [x] `if`, `else if`, `else`.
+- [x] `switch`.
 - [ ] `for`.
-- [ ] `while`.
+- [x] `while`.
 - [ ] `do while`.
 - [ ] `break` and `continue`.
 - [ ] Nested loops.
