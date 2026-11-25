@@ -107,7 +107,7 @@ Learn how C represents and manipulates data.
 - [x] `char`
 - [x] `int`
 - [x] `float`
-- [ ] `double`
+- [x] `double`
 - [ ] `short`
 - [x] `long`
 - [ ] `long long`
@@ -137,7 +137,7 @@ Learn how C represents and manipulates data.
 
 ### Additional Concepts
 
-- [ ] Signed vs. unsigned integers.
+- [x] Signed vs. unsigned integers.
 - [ ] Integer overflow.
 - [x] Floating-point precision.
 - [ ] Integer promotion.
@@ -163,10 +163,10 @@ Learn how to control program execution and organize code into reusable component
 
 - [x] `if`, `else if`, `else`.
 - [x] `switch`.
-- [ ] `for`.
+- [x] `for`.
 - [x] `while`.
 - [ ] `do while`.
-- [ ] `break` and `continue`.
+- [x] `break` and `continue`.
 - [ ] Nested loops.
 
 ### Functions
@@ -209,11 +209,11 @@ Unlike JavaScript, C does not provide high-level array and string abstractions. 
 
 ## 4.1 Arrays
 
-- [ ] Array declaration and initialization.
-- [ ] Array indexing.
-- [ ] Iterating through arrays.
+- [x] Array declaration and initialization.
+- [x] Array indexing.
+- [x] Iterating through arrays.
 - [ ] Multidimensional arrays.
-- [ ] Array length and `sizeof`.
+- [x] Array length and `sizeof`.
 - [ ] Passing arrays to functions.
 - [ ] Array boundaries.
 
