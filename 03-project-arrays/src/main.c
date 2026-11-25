@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define DEFAULT_SIZE 16
+
 void basic_arrays() {
   int arr[16];
   
@@ -32,10 +34,16 @@ void basic_arrays() {
 }
 
 void array_initializer() {
-  int arr[5] = {1, 3, 5, 7, 9};
+  int arr[DEFAULT_SIZE] = {1, [4]=2, 3, 5, 7, 9};
   int size = sizeof arr / sizeof arr[0];
+
   printf("size of arr = %d\n", size);
+  
   for (int i = 0; i < size; i++) {
+    if (arr[i] == 0) {
+      printf("_ ");
+      continue;
+    }
     printf("%d ", arr[i]);
   }
   printf("\n");
