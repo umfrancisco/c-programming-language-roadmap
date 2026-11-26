@@ -53,9 +53,34 @@ void array_initializer() {
   // int a[] = {22, 37, 3490};
 }
 
-// 6.5 Multidimensional Arrays - Beej
+int* passing_array_as_args(int *arr, int len) {
+  printf("# original arr\n");
+  for (int i = 0; i < len; i++) {
+    printf("arr[%d] = %d\n", i, arr[i]);
+    arr[i] *= 2;
+  }
+  return arr;
+}
+
+void arrays_and_pointers() {
+  int arr[] = {11, 22, 33, 44, 55};
+  int *start;
+  int n = sizeof arr / sizeof arr[0];
+
+  start = &arr[0];
+  printf("first element = %d\n", *start);
+
+  int *new_arr = passing_array_as_args(start, n); // pointer to first element, and it's length
+
+  printf("# original arr times 2\n");
+  for (int i = 0; i < n; i++) {
+    printf("arr[%d] = %d\n", i, new_arr[i]);
+  }
+}
+
 int main() {
   basic_arrays();
   array_initializer();
+  arrays_and_pointers();
   return 0;
 }
