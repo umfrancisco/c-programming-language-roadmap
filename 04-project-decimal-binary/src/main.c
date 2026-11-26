@@ -14,20 +14,26 @@ void to_binary(int num) {
   if (num == 0) printf("0");
   
   int bin[32];
-  int count = 0;
+  int length = 0;
   
   while (num > 0) {
-    bin[count] = num % BASE;
+    bin[length] = num % BASE;
     num = num / BASE;
-    count++;
+    length++;
   }
 
-  int length = count;
-  int *start = &bin[0];
+  int copy[length];
+  for (int i = 0; i < length; i++) {
+    copy[i] = bin[length - 1 - i];
+  }
+
+  int *start = &copy[0];
   print_arr(start, length);
 }
 
 int main() {
-  to_binary(12);
+  for (int i = 0; i < 6; i++) {
+    to_binary(i);
+  }
   return 0;
 }
