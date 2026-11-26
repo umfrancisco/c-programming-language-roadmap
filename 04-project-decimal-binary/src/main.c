@@ -2,31 +2,32 @@
 
 #define BASE 2
 
+void print_arr(int *arr, int len) {
+  for (int i = 0; i < len; i++) {
+    printf("%d", arr[i]);
+  }
+  printf("\n");
+}
+
 void to_binary(int num) {
   printf("decimal = %d, binary = ", num);
   if (num == 0) printf("0");
   
   int bin[32];
-  int i = 0;
-  int bin_size;
+  int count = 0;
   
   while (num > 0) {
-    bin[i] = num % BASE;
+    bin[count] = num % BASE;
     num = num / BASE;
-    i++;
+    count++;
   }
 
-  bin_size = i;
-
-  for (int i = bin_size - 1; i >= 0; i--) {
-    printf("%d", bin[i]);
-  }
-  printf("\n");
+  int length = count;
+  int *start = &bin[0];
+  print_arr(start, length);
 }
 
 int main() {
-  for (int i = 0; i < 100; i++) {
-    to_binary(i);
-  }
+  to_binary(12);
   return 0;
 }
