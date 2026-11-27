@@ -174,7 +174,7 @@ Learn how to control program execution and organize code into reusable component
 - [x] Function declarations and definitions.
 - [x] Function parameters.
 - [x] Return types.
-- [ ] `void` functions.
+- [x] `void` functions.
 - [ ] Function prototypes.
 - [ ] Scope and lifetime.
 - [x] Local and global variables.
@@ -212,10 +212,10 @@ Unlike JavaScript, C does not provide high-level array and string abstractions. 
 - [x] Array declaration and initialization.
 - [x] Array indexing.
 - [x] Iterating through arrays.
-- [ ] Multidimensional arrays.
+- [x] Multidimensional arrays.
 - [x] Array length and `sizeof`.
 - [x] Passing arrays to functions.
-- [ ] Array boundaries.
+- [x] Array boundaries.
 
 ## 4.2 Strings
 
@@ -223,10 +223,10 @@ C does not have a native string type. Strings are represented as arrays of chara
 
 Topics:
 
-- [ ] Character arrays.
-- [ ] String termination.
-- [ ] String literals.
-- [ ] `strlen()`.
+- [x] Character arrays.
+- [x] String termination.
+- [x] String literals.
+- [x] `strlen()`.
 - [ ] `strcpy()`.
 - [ ] `strncpy()`.
 - [ ] `strcmp()`.
