@@ -58,7 +58,7 @@ Start by understanding the development environment and how C programs are compil
   - [ ] Assembly.
   - [ ] Linking.
 - [ ] GCC and Clang compilers.
-- [ ] Header files and source files.
+- [x] Header files and source files.
 - [x] The `main()` function.
 - [x] Standard input and output.
 - [ ] Compilation flags and warnings.
@@ -132,7 +132,7 @@ Learn how C represents and manipulates data.
 - [x] Logical operators.
 - [ ] Bitwise operators.
 - [x] Increment and decrement.
-- [ ] Ternary operator.
+- [x] Ternary operator.
 - [ ] Operator precedence.
 
 ### Additional Concepts
@@ -214,7 +214,7 @@ Unlike JavaScript, C does not provide high-level array and string abstractions. 
 - [x] Iterating through arrays.
 - [ ] Multidimensional arrays.
 - [x] Array length and `sizeof`.
-- [ ] Passing arrays to functions.
+- [x] Passing arrays to functions.
 - [ ] Array boundaries.
 
 ## 4.2 Strings
@@ -240,14 +240,14 @@ Pointers are fundamental to C programming.
 
 Topics:
 
-- [ ] Memory addresses.
-- [ ] Address-of operator (`&`).
-- [ ] Dereference operator (`*`).
-- [ ] Pointer declaration.
-- [ ] Pointer initialization.
-- [ ] Null pointers.
+- [x] Memory addresses.
+- [x] Address-of operator (`&`).
+- [x] Dereference operator (`*`).
+- [x] Pointer declaration.
+- [x] Pointer initialization.
+- [x] Null pointers.
 - [ ] Pointer arithmetic.
-- [ ] Pointers and arrays.
+- [x] Pointers and arrays.
 - [ ] Pointers and functions.
 - [ ] Passing pointers as arguments.
 - [ ] Pointers to pointers.
@@ -258,7 +258,7 @@ Topics:
 
 ### Practice Projects
 
-- [ ] Reverse an array.
+- [x] Reverse an array.
 - [ ] Find the largest and smallest elements.
 - [ ] Implement your own `strlen()`.
 - [ ] Implement your own `strcmp()`.
