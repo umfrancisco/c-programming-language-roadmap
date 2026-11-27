@@ -78,6 +78,7 @@ void arrays_and_pointers() {
   }
 }
 
+// void reversing_arrays(int arr[], int len) {
 void reversing_arrays(int *arr, int len) {
   for (int i = 0; i < len / 2; i++) {
     int temp = arr[i];
