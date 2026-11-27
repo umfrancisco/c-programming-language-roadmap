@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #define BASE 2
+#define MAX 32
 
 void print_arr(int *arr, int len) {
   for (int i = 0; i < len; i++) {
@@ -13,7 +14,7 @@ void to_binary(int num) {
   printf("decimal = %d, binary = ", num);
   if (num == 0) printf("0");
   
-  int bin[32];
+  int bin[MAX];
   int length = 0;
   
   while (num > 0) {
@@ -29,10 +30,14 @@ void to_binary(int num) {
 
   int *start = &copy[0];
   print_arr(start, length);
+
+  printf("original array size = %ld\n", sizeof bin / sizeof bin[0]);
+  printf("copy size = %ld\n", sizeof copy / sizeof copy[0]);
+  printf("----\n");
 }
 
 int main() {
-  for (int i = 0; i < 6; i++) {
+  for (int i = 0; i < 256; i++) {
     to_binary(i);
   }
   return 0;
