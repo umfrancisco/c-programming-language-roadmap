@@ -31,7 +31,10 @@ void to_binary(int num) {
   int *start = &copy[0];
   print_arr(start, length);
 
-  printf("original array size = %ld\n", sizeof bin / sizeof bin[0]);
-  printf("copy size = %ld\n", sizeof copy / sizeof copy[0]);
+  size_t default_length = sizeof bin / sizeof bin[0];
+  size_t actual_length = sizeof copy / sizeof copy[0];
+
+  printf("default length = %zu\n", default_length);
+  printf("actual_length = %zu\n", actual_length);
   printf("----\n");
 }
