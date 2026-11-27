@@ -3,7 +3,7 @@
 void string_variables() {
   char *s = "hello world"; // a pointer to the first character in that string
   char str[] = "hello world"; // using array notation
-  int size_s = sizeof s; // prints 8
+  int size_s = sizeof s; // returns the size of the pointer, (char *) is 8 bytes
   int size_str = sizeof str; // works and prints 12
 
   printf("value=%s\n", s);
