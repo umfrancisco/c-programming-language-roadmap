@@ -78,9 +78,31 @@ void arrays_and_pointers() {
   }
 }
 
+void reversing_arrays(int *arr, int len) {
+  for (int i = 0; i < len / 2; i++) {
+    int temp = arr[i];
+    arr[i] = arr[len - 1 - i];
+    arr[len - 1 - i] = temp;
+  }
+}
+
+void reverse_and_print() {
+  int arr[] = {1, 2, 3, 4, 5};
+  int len = sizeof arr / sizeof arr[0];
+  int *start = &arr[0];
+
+  printf("# reversing arrays\n");
+  reversing_arrays(start, len);
+
+  for (int i = 0; i < len; i++) {
+    printf("arr[%d] = %d\n", i, arr[i]);
+  }
+}
+
 int main() {
   basic_arrays();
   array_initializer();
   arrays_and_pointers();
+  reverse_and_print();
   return 0;
 }
