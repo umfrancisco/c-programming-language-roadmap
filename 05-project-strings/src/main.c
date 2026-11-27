@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void string_variables() {
   char *s = "hello world"; // a pointer to the first character in that string
@@ -32,9 +33,19 @@ void editing_strings() {
   printf("%s\n", str);
 }
 
+size_t get_str_length(char *str) {
+  return strlen(str);
+}
+
+void print_str_length() {
+  size_t size_1 = get_str_length("hello");
+  printf("size of = %zu\n", size_1);
+}
+
 int main() {
   string_variables();
   greet("john doe");
   editing_strings();
+  print_str_length();
   return 0;
 }
