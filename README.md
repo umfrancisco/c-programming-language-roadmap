@@ -631,7 +631,7 @@ gcc -Wall -Wextra -Wpedantic -std=c17 -g main.c -o main
 
 | Resource | Description | Link |
 |---|---|---|
-| Beej's Guide to C | Accessible C programming guide | [Website](https://beej.us/guide/bgc/) |
+| beej's guide | Accessible C programming guide | [Website](https://beej.us/guide/bgc/) |
 | cppreference | C language and standard library reference | [Website](https://en.cppreference.com/w/c) |
 | geeks for geeks | C programming language tutorial | [Website](https://www.geeksforgeeks.org/c/c-programming-language/) |
 
