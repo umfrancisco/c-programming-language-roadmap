@@ -61,11 +61,42 @@ void couting_strs() {
   printf("size_2 = %d\n", size_2);
 }
 
+char* my_str_cpy(char *str) {
+  int len = my_strlen(str);
+  char copy[len];
+  for (int i = 0; i < len; i++) {
+    copy[i] = str[i];
+  }
+  char *start = &copy[0]; // how to return a string in a function
+  return start;
+}
+
+void copy_strings() {
+  printf("# using copy function and just pointer to char[]\n");
+  char str1[] = "hello";
+  char str2[] = "world";
+  char str3[] = "c/c++";
+  size_t str3_len = strlen(str3);
+  
+  char *copy1 = my_str_cpy(str1);
+  char *copy2 = str2;
+  char copy3[str3_len];
+  strcpy(copy3, str3);
+  
+  copy1[0] = 'j';
+  copy2[0] = 'e';
+  
+  printf("str1 = %s, copy1 = %s\n", str1, copy1);
+  printf("str2 = %s, copy2 = %s\n", str2, copy2);
+  printf("str3 = %s, copy3 = %s\n", str3, copy3);
+}
+
 int main() {
   string_variables();
   greet("john doe");
   editing_strings();
   print_str_length();
   couting_strs();
+  copy_strings();
   return 0;
 }
