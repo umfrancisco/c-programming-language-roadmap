@@ -23,8 +23,18 @@ void greet(char *name) {
   printf("hello, %s\n", name);
 }
 
+void editing_strings() {
+  char *s = "hello world";
+  char str[] = "hello world";
+  // s[0] = 'H'; // cannot edit, returns 'Segmentation fault (core dumped)'
+  printf("%s\n", s);
+  str[0] = 'H';
+  printf("%s\n", str);
+}
+
 int main() {
   string_variables();
   greet("john doe");
+  editing_strings();
   return 0;
 }
