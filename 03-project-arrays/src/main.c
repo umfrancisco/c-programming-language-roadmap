@@ -100,10 +100,28 @@ void reverse_and_print() {
   }
 }
 
+void print_2D_arr() {
+  printf("# printing 2D arrays\n");
+  int arr[2][3] = {
+    {1, 2, 3},
+    {4, 5, 6}
+  };
+
+  int row_size = sizeof arr / sizeof arr[0];
+  int col_size = sizeof arr[0] / sizeof arr[0][0];
+
+  for (int row = 0; row < row_size; row++) {
+    for (int col = 0; col < col_size; col++) {
+      printf("arr[%d][%d] = %d\n", row, col, arr[row][col]);
+    }
+  }
+}
+
 int main() {
   basic_arrays();
   array_initializer();
   arrays_and_pointers();
   reverse_and_print();
+  print_2D_arr();
   return 0;
 }
