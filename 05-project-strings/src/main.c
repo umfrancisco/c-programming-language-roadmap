@@ -45,10 +45,27 @@ void print_str_length() {
   printf("size of = %zu\n", size_2);
 }
 
+int my_strlen(char *str) {
+  int count = 0;
+  while (str[count] != '\0') {
+    count++;
+  }
+  return count;
+}
+
+void couting_strs() {
+  printf("# using my strlen function\n");
+  int size_1 = my_strlen("hello world");
+  int size_2 = my_strlen("hello");
+  printf("size_1 = %d\n", size_1);
+  printf("size_2 = %d\n", size_2);
+}
+
 int main() {
   string_variables();
   greet("john doe");
   editing_strings();
   print_str_length();
+  couting_strs();
   return 0;
 }
