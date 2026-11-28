@@ -91,8 +91,8 @@ Understand what each flag does instead of simply memorizing the command.
 - [x] Hello World.
 - [x] Simple calculator.
 - [x] Temperature converter.
-- [ ] Number guessing game.
-- [ ] Basic command-line menu.
+- [x] Number guessing game.
+- [x] Basic command-line menu.
 
 ---
 
