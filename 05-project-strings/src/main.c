@@ -33,14 +33,10 @@ void editing_strings() {
   printf("%s\n", str);
 }
 
-size_t get_str_length(char *str) {
-  return strlen(str);
-}
-
 void print_str_length() {
   printf("# using strlen()\n");
-  size_t size_1 = get_str_length("hello");
-  size_t size_2 = get_str_length("world");
+  size_t size_1 = strlen("hello");
+  size_t size_2 = strlen("world");
   printf("size of = %zu\n", size_1);
   printf("size of = %zu\n", size_2);
 }
