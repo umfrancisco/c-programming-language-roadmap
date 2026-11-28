@@ -3,14 +3,14 @@
 
 #define MAX 100
 
-struct read_result {
+typedef struct {
   int exit;
   char *msg;
   char *content;
-};
+} read_result;
 
-struct read_result read_files(char *path) {
-  struct read_result result;
+read_result read_files(char *path) {
+  read_result result;
 
   FILE *fp;
   fp = fopen(path, "r");
@@ -37,8 +37,8 @@ struct read_result read_files(char *path) {
 }
 
 void reading_files() {
-  struct read_result res1 = read_files("hello.txt");
-  struct read_result res2 = read_files("asdasd.txt");
+  read_result res1 = read_files("hello.txt");
+  read_result res2 = read_files("asdasd.txt");
   printf("res1 { exit=%d, msg=%s, content=%s }\n", res1.exit, res1.msg, res1.content);
   printf("res2 { exit=%d, msg=%s, content=%s }\n", res2.exit, res2.msg, res2.content);
 }
