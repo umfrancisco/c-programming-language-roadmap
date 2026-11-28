@@ -1,25 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int read_files(char *path) {
+struct read_result {
+  int exit;
+  char *msg;
+};
+
+
+struct read_result read_files(char *path) {
+  struct read_result res;
+
   FILE *fp;
   fp = fopen(path, "r");
 
   if (fp == NULL) {
-    printf("file do not exist\n");
-    return EXIT_FAILURE;
+    char msg[] = "file do not exist";
+    res.exit = EXIT_FAILURE;
+    res.msg = msg;
+    return res;
   }
   int c = fgetc(fp);
   printf("%c\n", c);
   fclose(fp);
-  return EXIT_SUCCESS;
+  res.exit = EXIT_SUCCESS;
+  res.msg = "read success";
+  return res;
 }
 
 void reading_files() {
-  int res_1 = read_files("hello.txt");
-  printf("EXIT = %d\n", res_1);
-  int res_2 = read_files("asdasd.txt");
-  printf("EXIT = %d\n", res_2);
+  struct read_result res1 = read_files("asdasd.txt");
+  struct read_result res2 = read_files("hello.txt");
+  printf("exit=%d, msg=%s\n", res1.exit, res1.msg);
+  printf("exit=%d, msg=%s\n", res2.exit, res2.msg);
 }
 
 int main() {
