@@ -36,11 +36,19 @@ read_result read_files(char *path) {
   return result;
 }
 
+void set_msg(read_result *r, char *new_msg) {
+  r->msg = new_msg;
+}
+
 void reading_files() {
   read_result res1 = read_files("hello.txt");
   read_result res2 = read_files("asdasd.txt");
   printf("res1 { exit=%d, msg=%s, content=%s }\n", res1.exit, res1.msg, res1.content);
   printf("res2 { exit=%d, msg=%s, content=%s }\n", res2.exit, res2.msg, res2.content);
+
+  // modifying a struct
+  set_msg(&res1, "setting new message");
+  printf("res1 { exit=%d, msg=%s, content=%s }\n", res1.exit, res1.msg, res1.content);
 }
 
 int main() {
