@@ -149,7 +149,7 @@ Learn how C represents and manipulates data.
 - [ ] Basic mathematical operations.
 - [ ] Number parity checker.
 - [ ] Bitwise calculator.
-- [ ] Binary-to-decimal converter.
+- [x] Binary-to-decimal converter.
 
 ---
 
@@ -227,7 +227,7 @@ Topics:
 - [x] String termination.
 - [x] String literals.
 - [x] `strlen()`.
-- [ ] `strcpy()`.
+- [x] `strcpy()`.
 - [ ] `strncpy()`.
 - [ ] `strcmp()`.
 - [ ] `strcat()`.
@@ -331,7 +331,7 @@ Learn how to create custom data structures and organize related information.
 
 ### Topics
 
-- [ ] `struct`.
+- [x] `struct`.
 - [ ] `typedef`.
 - [ ] `enum`.
 - [ ] `union`.
