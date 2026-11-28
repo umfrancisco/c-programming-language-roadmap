@@ -4,7 +4,7 @@
 
 #define MAX 100
 
-read_result read_files(char *path) {
+read_result read_files_with_struct(char *path) {
   read_result result;
 
   FILE *fp;
@@ -36,8 +36,8 @@ void set_msg(read_result *r, char *new_msg) {
 }
 
 void reading_files() {
-  read_result res1 = read_files("hello.txt");
-  read_result res2 = read_files("asdasd.txt");
+  read_result res1 = read_files_with_struct("hello.txt");
+  read_result res2 = read_files_with_struct("asdasd.txt");
   printf("res1 { exit=%d, msg=%s, content=%s }\n", res1.exit, res1.msg, res1.content);
   printf("res2 { exit=%d, msg=%s, content=%s }\n", res2.exit, res2.msg, res2.content);
 
