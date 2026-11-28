@@ -25,7 +25,8 @@ void struct_initializers() {
 }
 
 void set_price(struct car *c, double new_price) {
-  (*c).price = new_price; // works, but not-idiomatic
+  // (*c).price = new_price; // works, but not-idiomatic
+  c->price = new_price;
 }
 
 void passing_strucs_as_args() {
