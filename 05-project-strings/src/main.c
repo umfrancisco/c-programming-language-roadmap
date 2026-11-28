@@ -59,17 +59,18 @@ void couting_strs() {
 
 char* my_str_cpy(char *str) {
   int len = my_strlen(str);
-  char copy[len];
+  char copy[len + 1]; // extra space for null terminator
   for (int i = 0; i < len; i++) {
     copy[i] = str[i];
   }
+  copy[len] = '\0'; // add null terminator at the end
   char *start = &copy[0]; // how to return a string in a function
   return start;
 }
 
 void copy_strings() {
   printf("# using copy function and just pointer to char[]\n");
-  char str1[] = "hello";
+  char str1[] = "hello world";
   char str2[] = "world";
   char str3[] = "c/c++";
   size_t str3_len = strlen(str3);
