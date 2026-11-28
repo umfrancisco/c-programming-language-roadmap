@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MAX 100
+
 struct read_result {
   int exit;
   char *msg;
@@ -20,7 +22,7 @@ struct read_result read_files(char *path) {
     return result;
   }
   
-  char file_content[100];
+  char file_content[MAX];
   int c, count = 0;
   while ((c = fgetc(fp)) != EOF) {
     file_content[count] = (char) c;
