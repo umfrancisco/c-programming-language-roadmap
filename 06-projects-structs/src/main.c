@@ -39,8 +39,25 @@ void passing_strucs_as_args() {
   line();
 }
 
+struct car copy_structs(struct car *c) {
+  struct car b = *c;
+  return b;
+}
+
+void print_copied_struct() {
+  struct car saturn = {"Saturn SL/2", 16000.99, 175};
+  struct car copy_car = copy_structs(&saturn);
+
+  printf("# Copy Car -> Saturn\n");
+  printf("Name:           %s\n", copy_car.name);
+  printf("Price (USD):    %.2f\n", copy_car.price);
+  printf("Top Speed (km): %d\n", copy_car.speed);
+  line();
+}
+
 int main() {
   struct_initializers();
   passing_strucs_as_args();
+  print_copied_struct();
   return 0;
 }
