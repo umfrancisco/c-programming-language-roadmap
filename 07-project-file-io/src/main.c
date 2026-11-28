@@ -6,7 +6,7 @@ void line() {
 }
 
 int main() {
-  reading_files(); // example1
+  reading_files();
   line();
   basic_file_read("hello.txt");
   return 0;
