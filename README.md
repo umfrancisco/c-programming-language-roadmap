@@ -633,5 +633,6 @@ gcc -Wall -Wextra -Wpedantic -std=c17 -g main.c -o main
 |---|---|---|
 | beej's guide | Accessible C programming guide | [Website](https://beej.us/guide/bgc/) |
 | cppreference | C language and standard library reference | [Website](https://en.cppreference.com/w/c) |
+| w3 schools | Online C Tutorials | [Website](https://www.w3schools.com/c/index.php) |
 
 ---
