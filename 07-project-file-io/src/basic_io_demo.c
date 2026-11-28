@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/example1.h"
+#include "../include/basic_io_demo.h"
 
 #define MAX 100
 
@@ -44,4 +44,17 @@ void reading_files() {
   // modifying a struct
   set_msg(&res1, "setting new message");
   printf("res1 { exit=%d, msg=%s, content=%s }\n", res1.exit, res1.msg, res1.content);
+}
+
+void basic_file_read(char *path) {
+  FILE *fp;
+  int c;
+
+  fp = fopen(path, "r");
+  while((c = fgetc(fp)) != EOF) {
+    printf("%c", c);
+  }
+  printf("\n");
+
+  fclose(fp);
 }

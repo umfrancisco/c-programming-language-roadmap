@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../include/example1.h"
+#include "../include/basic_io_demo.h"
 
 void line() {
   printf("----------\n");
@@ -8,5 +8,6 @@ void line() {
 int main() {
   reading_files(); // example1
   line();
+  basic_file_read("hello.txt");
   return 0;
 }

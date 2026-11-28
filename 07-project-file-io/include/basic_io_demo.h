@@ -1,5 +1,5 @@
-#ifndef EXAMPLE1_H
-#define EXAMPLE1_H
+#ifndef BASIC_IO_DEMO_H
+#define BASIC_IO_DEMO_H
 
 typedef struct {
   int exit;
@@ -10,5 +10,6 @@ typedef struct {
 read_result read_files(char *path);
 void set_msg(read_result *r, char *new_msg);
 void reading_files();
+void basic_file_read(char *path);
 
 #endif
